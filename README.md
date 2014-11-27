@@ -79,6 +79,7 @@ return [
     ],
 ];
 ```
+
 See [Yii RBAC](http://www.yiiframework.com/doc-2.0/guide-security-authorization.html#role-based-access-control-rbac) for more detail.
 You can then access Auth manager through the following URL:
 
@@ -92,14 +93,18 @@ http://localhost/path/to/index.php?r=admin/assignment
 ```
 
 To use menu manager (optional). Execute yii migration here:
+
 ```
 yii migrate --migrationPath=@mdm/admin/migrations
 ```
 
 If You use database (class 'yii\rbac\DbManager') to save rbac data. Execute yii migration here:
+
 ```
 yii migrate --migrationPath=@yii/rbac/migrations
 ```
+
+You need to set `authManager` component as 'yii\rbac\DbManager' for your console application.
 
 Customizing Controller
 ----------------------

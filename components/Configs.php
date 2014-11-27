@@ -54,6 +54,16 @@ class Configs extends \yii\base\Object
      * @var string Menu table name.
      */
     public $menuTable = '{{%menu}}';
+
+    /**
+     * @var integer Remember duration. Default to a week.
+     */
+    public $rememberDuration = 604800;
+
+    /**
+     * @var boolean  
+     */
+    public $confirmationNeeded = false;
     
     /**
      * @var self Instance of self
